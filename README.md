@@ -1,4 +1,4 @@
-# ts-project
+# demo-project
 
 ## Project setup
 ```
