@@ -71,8 +71,8 @@ limitations under the License. -->
     @Mutation('ADD_COMPS_TREE') private ADD_COMPS_TREE: any;
     @Action('RUN_EVENTS') private RUN_EVENTS: any;
     @Getter('durationTime') private durationTime: any;
-    private name: string = '';
-    private show: boolean = false;
+    private name = '';
+    private show = false;
     private dashboardType = DASHBOARDTYPE;
 
     get type() {

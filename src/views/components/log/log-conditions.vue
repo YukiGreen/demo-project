@@ -113,10 +113,10 @@ limitations under the License. -->
     @Mutation('SET_TAG_LIST') private SET_TAG_LIST: any;
     @Mutation('SET_KEYWORDS_CONTENT') private SET_KEYWORDS_CONTENT: any;
     @Mutation('SET_EXCLUDING_KEYWORDS_CONTENT') private SET_EXCLUDING_KEYWORDS_CONTENT: any;
-    private keywordsOfContent: string = '';
-    private excludingKeywordsOfContent: string = '';
+    private keywordsOfContent = '';
+    private excludingKeywordsOfContent = '';
     private searchTime: Date[] = [];
-    private traceId: string = '';
+    private traceId = '';
     private LogConditionsOpt = {
       TraceID: 'traceId',
       Tags: 'tags',
@@ -125,7 +125,7 @@ limitations under the License. -->
       Date: 'date',
     };
     private cateGoryService = 'service';
-    private clearAllTags: boolean = false;
+    private clearAllTags = false;
     private created() {
       this.searchTime = [this.rocketbotGlobal.durationRow.start, this.rocketbotGlobal.durationRow.end];
       this.traceId = localStorage.getItem('logTraceId') || '';

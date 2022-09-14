@@ -112,7 +112,7 @@ limitations under the License. -->
     @Action('QUERY_LOGS_BYKEYWORDS') private QUERY_LOGS_BYKEYWORDS: any;
     @Getter('durationTime') private durationTime: any;
 
-    private pageNum: number = 1;
+    private pageNum = 1;
     private cateGoryBrowser = 'browser';
     private showConditionsBox = true;
     private pageSize = 22;

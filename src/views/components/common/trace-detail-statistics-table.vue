@@ -51,9 +51,9 @@ limitations under the License. -->
     @Prop() public HeaderType!: string;
 
     public tableData: StatisticsSpan[] = [];
-    public diaplay: boolean = true;
+    public diaplay = true;
     public list: any[] = [];
-    public loading: boolean = true;
+    public loading = true;
 
     @Watch('data')
     public onDataChanged(val: any, oldVal: any) {

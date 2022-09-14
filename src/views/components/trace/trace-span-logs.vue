@@ -108,10 +108,10 @@ limitations under the License. -->
     @State('rocketTrace') private rocketTrace!: traceState;
     @Action('rocketTrace/GET_TRACE_SPAN_LOGS') private GET_TRACE_SPAN_LOGS: any;
     @Prop() private currentSpan: any;
-    private showRelatedLogs: boolean = false;
+    private showRelatedLogs = false;
     private copy = copy;
-    private pageNum: number = 1;
-    private pageSize: number = 10;
+    private pageNum = 1;
+    private pageSize = 10;
 
     private getTaceLogs() {
       this.showRelatedLogs = true;

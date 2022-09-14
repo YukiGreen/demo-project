@@ -39,7 +39,7 @@ interface LogTags {
   data: { key: string; value: string };
 }
 export interface LogTestMetrics {
-  name: String;
+  name: string;
   tags: { key: string; value: string };
   value: number;
   timestamp: number;

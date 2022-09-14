@@ -71,7 +71,7 @@ limitations under the License. -->
       userName: '',
       password: '',
     };
-    private error: boolean = false;
+    private error = false;
 
     // ======================================================
     // 此处为登录的业务逻辑，自行调用自己的登录接口将返回值写入localstorage

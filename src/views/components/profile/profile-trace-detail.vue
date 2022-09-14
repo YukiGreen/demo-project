@@ -65,9 +65,9 @@ limitations under the License. -->
     @Mutation('profileStore/SET_CURRENT_SPAN') private SET_CURRENT_SPAN: any;
 
     private timeRange: Array<{ start: number; end: number }> = [];
-    private mode: string = 'include';
-    private message: string = '';
-    private loading: boolean = false;
+    private mode = 'include';
+    private message = '';
+    private loading = false;
 
     private selectSpan(data: any) {
       this.SET_CURRENT_SPAN(data);

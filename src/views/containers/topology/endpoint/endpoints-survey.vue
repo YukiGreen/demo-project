@@ -60,7 +60,7 @@ limitations under the License. -->
     private type = TopologyType.TOPOLOGY_ENDPOINT;
     private topoEndpoints: unknown[] = [];
     private templateTypes: string[] = [];
-    private updateObjects: boolean = false;
+    private updateObjects = false;
 
     private beforeMount() {
       this.setEndpointTemplates();

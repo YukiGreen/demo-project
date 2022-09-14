@@ -44,10 +44,10 @@ limitations under the License. -->
     @Prop() private noLink!: boolean;
 
     private columns = ServiceLogDetail;
-    private showDetail: boolean = false;
+    private showDetail = false;
     private list = [];
     private currentLog: any = {};
-    private logContent: string = '';
+    private logContent = '';
 
     private handleSelectLog(data: any[]) {
       this.currentLog = data;

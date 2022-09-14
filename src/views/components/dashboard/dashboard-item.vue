@@ -136,7 +136,7 @@ limitations under the License. -->
       TopologyType.TOPOLOGY_SERVICE_INSTANCE_DEPENDENCY,
       TopologyType.TOPOLOGY_ENDPOINT_DEPENDENCY,
     ] as string[];
-    private showTips: boolean = false;
+    private showTips = false;
 
     private created() {
       this.status = this.item.metricType;

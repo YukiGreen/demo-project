@@ -38,7 +38,7 @@ limitations under the License. -->
     @Prop({ default: false }) private detail!: boolean;
     @Prop() private active!: string | number;
     @Prop() private value!: string | number;
-    private show: boolean = false;
+    private show = false;
   }
 </script>
 

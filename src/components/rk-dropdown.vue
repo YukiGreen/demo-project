@@ -48,7 +48,7 @@ limitations under the License. -->
     @Prop({ default: false }) private show!: boolean;
     @Prop({ default: false }) private search!: boolean;
     @Prop({ default: () => [] }) private options!: Option[];
-    private searchString: string = '';
+    private searchString = '';
     private get searchResult() {
       return this.options.filter((item: Option) => `${item.name}`.indexOf(this.searchString) !== -1);
     }

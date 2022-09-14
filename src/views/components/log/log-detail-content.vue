@@ -40,7 +40,7 @@ limitations under the License. -->
   export default class LogServiceDetailContent extends Vue {
     @Prop() private currentLog: any;
     private columns = ServiceLogDetail;
-    private logContent: string = '';
+    private logContent = '';
 
     get logTags() {
       if (!this.currentLog.tags) {

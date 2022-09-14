@@ -71,8 +71,8 @@ limitations under the License. -->
     @Prop() private current!: any;
     @Prop({ default: 'light' }) private theme!: string;
 
-    private search: string = '';
-    private visible: boolean = false;
+    private search = '';
+    private visible = false;
 
     get filterData() {
       return this.data.filter((i: any) => i.label.toUpperCase().indexOf(this.search.toUpperCase()) !== -1);

@@ -152,9 +152,9 @@ limitations under the License. -->
     @Mutation('rocketTopo/EDIT_DEPENDENCY_METRICS') private EDIT_DEPENDENCY_METRICS: any;
     @Mutation('rocketTopo/UPDATE_TOPO_TEMPLATE_TYPES') private UPDATE_TOPO_TEMPLATE_TYPES: any;
 
-    private isMini: boolean = true;
-    private showInfoCount: number = 0;
-    private showInfo: boolean = false;
+    private isMini = true;
+    private showInfoCount = 0;
+    private showInfo = false;
     private dialogTopoVisible = false;
     private templateTypesList: Option[] = [];
     private currentType: Option[] = [{ key: '', label: '' }];

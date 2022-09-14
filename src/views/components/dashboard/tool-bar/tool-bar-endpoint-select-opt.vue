@@ -27,7 +27,7 @@ limitations under the License. -->
   @Component
   export default class ToolBarEndpointSelectOpt extends Vue {
     @Prop() public data!: any;
-    private show: boolean = false;
+    private show = false;
   }
 </script>
 

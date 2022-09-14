@@ -60,9 +60,9 @@ limitations under the License. -->
     @Prop() private rocketComps: any;
     @Prop() private compType: any;
     @Mutation('ADD_COMP') private ADD_COMP: any;
-    private current: string = 'Global';
-    private configMode: boolean = false;
-    private config: string = '';
+    private current = 'Global';
+    private configMode = false;
+    private config = '';
     private get tree() {
       const temp: any = {
         Global: [],

@@ -84,8 +84,8 @@ limitations under the License. -->
     @Action('FETCH_EVENTS') private FETCH_EVENTS: any;
 
     private eventType: Option = { label: 'All', key: '' };
-    private pageSize: number = 20;
-    private pageNum: number = 1;
+    private pageSize = 20;
+    private pageNum = 1;
 
     private beforeMount() {
       this.MIXHANDLE_GET_OPTION({

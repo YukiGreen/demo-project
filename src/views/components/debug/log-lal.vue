@@ -162,21 +162,21 @@ limitations under the License. -->
 
     private logTestConstants = LogTestConstants;
     private time!: Date;
-    private logContent: string = '';
-    private traceID: string = '';
-    private segmentID: string = '';
-    private spanID: string = '';
+    private logContent = '';
+    private traceID = '';
+    private segmentID = '';
+    private spanID = '';
     private typeList = TypeList;
     private logMetricsHeader = LogMetricsHeader;
     private currentType = {
       label: 'Text',
       value: 'text',
     };
-    private logRespContent: string = '';
-    private showLALResp: boolean = false;
-    private isLoading: boolean = false;
+    private logRespContent = '';
+    private showLALResp = false;
+    private isLoading = false;
     private monacoInstance: any;
-    private errorCnt: string = '';
+    private errorCnt = '';
     private errorsMessage: Array<{ message: string }> = [];
 
     private created() {

@@ -71,13 +71,13 @@ limitations under the License. -->
     @Action('SET_UTC') private SET_UTC: any;
     @Action('FETCH_VERSION') private FETCH_VERSION: any;
     private lang: string | null = '';
-    private utcHour: number = 0;
-    private utcMin: number = 0;
-    private auto: boolean = false;
-    private autoTime: number = 6;
+    private utcHour = 0;
+    private utcMin = 0;
+    private auto = false;
+    private autoTime = 6;
     private timer: any = null;
-    private showSetting: boolean = false;
-    private settingOpened: boolean = false;
+    private showSetting = false;
+    private settingOpened = false;
 
     private beforeMount() {
       let utc = localStorage.getItem('utc') || '';

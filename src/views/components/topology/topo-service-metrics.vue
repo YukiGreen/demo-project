@@ -56,9 +56,9 @@ limitations under the License. -->
     @Mutation('rocketTopo/SET_TOPO_SERVICE') private SET_TOPO_SERVICE: any;
 
     private serviceComps: unknown[] = [];
-    private height: number = 800;
+    private height = 800;
     private default = DEFAULT;
-    private type: string = '';
+    private type = '';
 
     private mounted() {
       this.type = TopologyType.TOPOLOGY_SERVICE;

@@ -38,7 +38,7 @@ const query: any = {
 };
 
 class Graph {
-  private queryData: string = '';
+  private queryData = '';
   public query(queryData: string) {
     this.queryData = queryData;
     return this;

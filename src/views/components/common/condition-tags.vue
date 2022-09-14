@@ -44,7 +44,7 @@ limitations under the License. -->
     @Prop() private clearTags!: boolean;
     @Prop({ default: 'dark' }) private theme!: string;
     private tagsList: string[] = [];
-    private tags: string = '';
+    private tags = '';
 
     private created() {
       if (this.type === 'LOG') {

@@ -74,11 +74,11 @@ limitations under the License. -->
     @Action('MIXHANDLE_CHANGE_GROUP') private MIXHANDLE_CHANGE_GROUP: any;
     @Action('MIXHANDLE_GET_OPTION') private MIXHANDLE_GET_OPTION: any;
     @Getter('durationTime') private durationTime: any;
-    private name: string = '';
+    private name = '';
     private type: string = DASHBOARDTYPE.SERVICE;
-    private show: boolean = false;
+    private show = false;
     private DASHBOARDTYPE = DASHBOARDTYPE;
-    private templateName: string = '';
+    private templateName = '';
 
     private get compType() {
       return (

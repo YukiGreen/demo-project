@@ -141,12 +141,12 @@ limitations under the License. -->
     @Mutation('rocketTopo/UPDATE_TOPO_TEMPLATE_TYPES') private UPDATE_TOPO_TEMPLATE_TYPES: any;
     @Mutation('rocketTopo/SET_TOPO_SERVICE_INSTANCE_DEPENDENCY') private SET_TOPO_SERVICE_INSTANCE_DEPENDENCY: any;
 
-    private showInfo: boolean = true;
-    private height: number = 500;
+    private showInfo = true;
+    private height = 500;
     private serviceInstanceDependencyComps: any = [];
-    private mode: string = 'server';
+    private mode = 'server';
     private templateType: string[] = [];
-    private templateMode: string = '';
+    private templateMode = '';
     private type = TopologyType.TOPOLOGY_SERVICE_INSTANCE_DEPENDENCY;
     private currentType: Option[] = [];
     private templateNameList: Option[] = [];

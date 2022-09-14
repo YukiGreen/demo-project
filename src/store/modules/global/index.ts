@@ -54,7 +54,7 @@ const getters = {
     };
   },
   intervalTime(state: State, getter: any): string[] {
-    let interval: number = 946080000000;
+    let interval = 946080000000;
     switch (getter.duration.step) {
       case 'MINUTE':
         interval = 60000;

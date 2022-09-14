@@ -79,7 +79,7 @@ limitations under the License. -->
   @Component({ components: {} })
   export default class EventTimeline extends Vue {
     @State('rocketEvent') private rocketEvent!: EventState;
-    private showDetails: boolean = false;
+    private showDetails = false;
     private currentEvent: any = {
       startTime: 0,
       endTime: 0,

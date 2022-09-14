@@ -149,7 +149,7 @@ limitations under the License. -->
     @Action('SELECT_INSTANCE') private SELECT_INSTANCE: any;
     @Action('MIXHANDLE_GET_OPTION') private MIXHANDLE_GET_OPTION: any;
     @Action('GET_EVENT') private GET_EVENT: any;
-    private dialogAttributesVisible: boolean = false;
+    private dialogAttributesVisible = false;
     private dashboardType = DASHBOARDTYPE;
     private pageEventsType = PageEventsType;
 

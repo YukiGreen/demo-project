@@ -59,7 +59,7 @@ limitations under the License. -->
     @Mutation('profileStore/SET_HEADER_SOURCE') private SET_HEADER_SOURCE: any;
     @Action('profileStore/GET_TASK_LIST') private GET_TASK_LIST: any;
 
-    private endpointName: string = '';
+    private endpointName = '';
     private dialogVisible = false;
     private serviceOpt: any;
 

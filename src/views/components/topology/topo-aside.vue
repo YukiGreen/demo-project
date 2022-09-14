@@ -52,7 +52,7 @@ limitations under the License. -->
     @Mutation('SET_COMPS_TREE') private SET_COMPS_TREE: any;
     @Mutation('rocketTopo/SET_MODE_STATUS') private SET_MODE_STATUS: any;
     private initState = initState;
-    private radioStatus: boolean = false;
+    private radioStatus = false;
 
     private get showServerInfo() {
       return this.stateTopo.currentNode.name && this.stateTopo.currentNode.isReal;

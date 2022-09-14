@@ -80,8 +80,8 @@ limitations under the License. -->
     @Prop() private title!: string;
     @Prop({ default: false }) private hasSearch!: boolean;
 
-    private search: string = '';
-    private visible: boolean = false;
+    private search = '';
+    private visible = false;
 
     get filterData() {
       return this.data.filter((i: any) => i.label.toUpperCase().indexOf(this.search.toUpperCase()) !== -1);

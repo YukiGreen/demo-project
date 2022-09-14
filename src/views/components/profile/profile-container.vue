@@ -62,7 +62,7 @@ limitations under the License. -->
     @Mutation('profileStore/SET_HIGHLIGHT_TOP') private SET_HIGHLIGHT_TOP: any;
     @Prop() private highlightTop!: boolean;
     @Prop() private tableData!: any[];
-    private thread: number = 500;
+    private thread = 500;
     private updateHighlightTop() {
       this.SET_HIGHLIGHT_TOP();
     }

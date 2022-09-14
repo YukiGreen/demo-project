@@ -45,9 +45,9 @@ limitations under the License. -->
     @Action('rocketAlarm/GET_ALARM') private GET_ALARM: any;
     @Prop() private total!: number;
     @Prop() private keyword!: string;
-    private pageNum: number = 1;
-    private alarmErrors: boolean = false;
-    private alarmErrorsDesc: string = '';
+    private pageNum = 1;
+    private alarmErrors = false;
+    private alarmErrorsDesc = '';
     private handleFetch(pageNum: number) {
       this.pageNum = pageNum;
       this.GET_ALARM({

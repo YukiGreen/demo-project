@@ -79,9 +79,9 @@ export interface QueryEventCondition {
 }
 
 type SourceInput = {
-  service: String;
-  serviceInstance: String;
-  endpoint: String;
+  service: string;
+  serviceInstance: string;
+  endpoint: string;
 };
 export enum EventType {
   Normal,

@@ -31,8 +31,8 @@ limitations under the License. -->
   })
   export default class TopoGroupCreate extends Vue {
     @Mutation('rocketTopoGroup/CREATE_GROUP') private CREATE_GROUP: any;
-    private name: string = '';
-    private create: boolean = false;
+    private name = '';
+    private create = false;
 
     private handleCreateGroup() {
       this.CREATE_GROUP(this.name);

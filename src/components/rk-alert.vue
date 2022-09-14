@@ -36,7 +36,7 @@ limitations under the License. -->
     @Prop({ default: true }) private closable!: boolean;
     @Prop() private show!: boolean;
 
-    private iconType: string = 'error';
+    private iconType = 'error';
 
     private mounted() {
       this.iconType =

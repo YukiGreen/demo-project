@@ -77,7 +77,7 @@ limitations under the License. -->
     @Mutation('SET_PAGE_TYPE') private SET_PAGE_TYPE: any;
 
     private current: any = {};
-    private dialog: string = '';
+    private dialog = '';
 
     private created() {
       this.SET_PAGE_TYPE(PageTypes.TOPOLOGY);
@@ -89,31 +89,31 @@ limitations under the License. -->
       localStorage.removeItem('topologyServicesDependency');
 
       if (window.localStorage.getItem('topologyServices')) {
-        const serviceComps: string = `${window.localStorage.getItem('topologyServices')}`;
+        const serviceComps = `${window.localStorage.getItem('topologyServices')}`;
         const topoService = serviceComps ? JSON.parse(serviceComps) : [];
 
         this.SET_TOPO_SERVICE(topoService);
       }
       if (window.localStorage.getItem('topologyInstances')) {
-        const instanceComps: string = `${window.localStorage.getItem('topologyInstances')}`;
+        const instanceComps = `${window.localStorage.getItem('topologyInstances')}`;
         const topoInstance = instanceComps ? JSON.parse(instanceComps) : [];
 
         this.SET_TOPO_INSTANCE(topoInstance);
       }
       if (window.localStorage.getItem('topologyEndpoints')) {
-        const endpointComps: string = `${window.localStorage.getItem('topologyEndpoints')}`;
+        const endpointComps = `${window.localStorage.getItem('topologyEndpoints')}`;
         const topoEndpoint = endpointComps ? JSON.parse(endpointComps) : [];
 
         this.SET_TOPO_ENDPOINT(topoEndpoint);
       }
       if (localStorage.getItem('topologyServicesDependency')) {
-        const serviceDependencyComps: string = `${localStorage.getItem('topologyServicesDependency')}`;
+        const serviceDependencyComps = `${localStorage.getItem('topologyServicesDependency')}`;
         const topoServiceDependency = serviceDependencyComps ? JSON.parse(serviceDependencyComps) : [];
 
         this.SET_TOPO_SERVICE_DEPENDENCY(topoServiceDependency);
       }
       if (localStorage.getItem('topologyServicesInstanceDependency')) {
-        const serviceInstanceDependencyComps: string = `${localStorage.getItem('topologyServicesInstanceDependency')}`;
+        const serviceInstanceDependencyComps = `${localStorage.getItem('topologyServicesInstanceDependency')}`;
         const topoServiceInstanceDependency = serviceInstanceDependencyComps
           ? JSON.parse(serviceInstanceDependencyComps)
           : [];
@@ -121,7 +121,7 @@ limitations under the License. -->
         this.SET_TOPO_SERVICE_INSTANCE_DEPENDENCY(topoServiceInstanceDependency);
       }
       if (localStorage.getItem('topologyEndpointDependency')) {
-        const serviceEndpointComps: string = `${localStorage.getItem('topologyEndpointDependency')}`;
+        const serviceEndpointComps = `${localStorage.getItem('topologyEndpointDependency')}`;
         const topoEndpointDependency = serviceEndpointComps ? JSON.parse(serviceEndpointComps) : [];
 
         this.SET_TOPO_ENDPOINT_DEPENDENCY(topoEndpointDependency);

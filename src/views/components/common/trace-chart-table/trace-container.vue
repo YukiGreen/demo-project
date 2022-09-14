@@ -64,9 +64,9 @@ limitations under the License. -->
     public type!: string;
 
     private headerData: Array<{ label: string; value: string }> | undefined;
-    private method: number = 300;
-    private componentKey: number = 0;
-    private flag: boolean = true;
+    private method = 300;
+    private componentKey = 0;
+    private flag = true;
 
     public created(): void {
       if (this.type === 'profile') {

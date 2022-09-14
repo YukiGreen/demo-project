@@ -58,7 +58,7 @@ limitations under the License. -->
     }
 
     private goToCertainPage() {
-      const regInt: RegExp = /^0*[1-9]\d*$/;
+      const regInt = /^0*[1-9]\d*$/;
       if (regInt.test(this.currentShowPage.toString()) && Number(this.currentShowPage) <= this.totalPages) {
         this.$emit('changePage', this.currentShowPage);
       }

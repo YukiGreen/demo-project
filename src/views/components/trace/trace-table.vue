@@ -73,8 +73,8 @@ limitations under the License. -->
     private SET_DEFAULT_EMPTY_TRACE: any;
     @Action('rocketTrace/GET_TRACELIST') private GET_TRACELIST: any;
     @Action('rocketTrace/GET_TRACE_SPANS') private GET_TRACE_SPANS: any;
-    private loading: boolean = false;
-    private selectedKey: string = '';
+    private loading = false;
+    private selectedKey = '';
     @Watch('rocketTrace.traceList')
     private onTraceListChange() {
       if (this.rocketTrace.traceList && this.rocketTrace.traceList.length > 0) {

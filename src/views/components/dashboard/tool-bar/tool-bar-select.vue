@@ -67,8 +67,8 @@ limitations under the License. -->
     @Prop() public title!: string;
     @Prop() public icon!: string;
     @Prop({ type: Boolean, default: true }) public selectable!: boolean;
-    public search: string = '';
-    public visible: boolean = false;
+    public search = '';
+    public visible = false;
     get filterData() {
       return this.data.filter((i: Option) => i.label.toUpperCase().includes(this.search.toUpperCase()));
     }

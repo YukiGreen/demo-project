@@ -565,7 +565,7 @@ limitations under the License. -->
       this.hasChartType();
     }
 
-    private setItemServices(update: boolean = false) {
+    private setItemServices(update = false) {
       this.GET_ITEM_SERVICES({ keyword: this.itemConfig.servicesKey || '', duration: this.durationTime }).then(
         (result: Array<{ label: string; key: string }>) => {
           this.services = result;
@@ -583,7 +583,7 @@ limitations under the License. -->
       );
     }
 
-    private getServiceObject(update: boolean = false) {
+    private getServiceObject(update = false) {
       const service =
         this.services.filter((d: { key: string; label: string }) => d.label === this.itemConfig.currentService)[0] ||
         {};

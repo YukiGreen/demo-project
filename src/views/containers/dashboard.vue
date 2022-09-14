@@ -95,9 +95,9 @@ limitations under the License. -->
     @Mutation('SET_TEMPLATES') private SET_TEMPLATES: any;
     @Mutation('UPDATE_DASHBOARD') private UPDATE_DASHBOARD: any;
 
-    private isRouterAlive: boolean = true;
-    private templatesErrors: boolean = false;
-    private showCacheModal: boolean = false;
+    private isRouterAlive = true;
+    private templatesErrors = false;
+    private showCacheModal = false;
     private intervalCache: any;
     public reload(): void {
       this.isRouterAlive = false;
@@ -128,7 +128,7 @@ limitations under the License. -->
         });
         this.SET_TEMPLATES(templatesConfig);
         if (window.localStorage.getItem('version') === '8.0') {
-          const data: string = `${window.localStorage.getItem('dashboard')}`;
+          const data = `${window.localStorage.getItem('dashboard')}`;
           this.SET_COMPS_TREE(JSON.parse(data));
         } else {
           window.localStorage.removeItem('dashboard');

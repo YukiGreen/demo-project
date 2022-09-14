@@ -51,7 +51,7 @@ limitations under the License. -->
     @Prop() private item!: any;
     @Prop() private type!: any;
     @Prop() private intervalTime!: any;
-    private showModal: boolean = false;
+    private showModal = false;
     private redirectData: any = {
       name: '',
       log: {
@@ -67,7 +67,7 @@ limitations under the License. -->
         },
       },
     };
-    private isServiceChart: boolean = false;
+    private isServiceChart = false;
 
     private created() {
       const serviceMetricNames = [

@@ -127,12 +127,12 @@ limitations under the License. -->
     @Action('rocketTrace/GET_TRACE_SPAN_LOGS') private GET_TRACE_SPAN_LOGS: any;
     @Prop() private spans!: Span[];
     @Prop() private current!: Trace;
-    private mode: boolean = true;
-    private displayMode: string = 'list';
-    private showTraceLogs: boolean = false;
-    private pageSize: number = 10;
-    private pageNum: number = 1;
-    private traceId: string = '';
+    private mode = true;
+    private displayMode = 'list';
+    private showTraceLogs = false;
+    private pageSize = 10;
+    private pageNum = 1;
+    private traceId = '';
 
     private handleClick(ids: string[]) {
       let copyValue = null;

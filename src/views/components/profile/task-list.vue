@@ -138,9 +138,9 @@ limitations under the License. -->
     @Action('profileStore/GET_SEGMENT_LIST') private GET_SEGMENT_LIST: any;
     @Action('profileStore/GET_SEGMENT_SPANS') private GET_SEGMENT_SPANS: any;
     @Action('profileStore/GET_TASK_LOGS') private GET_TASK_LOGS: any;
-    private selectedKey: string = '';
+    private selectedKey = '';
     private selectedTask: TaskListItem | {} = {};
-    private viewDetail: boolean = false;
+    private viewDetail = false;
     private selectedTaskService: any = {};
     private instanceLogs: TaskLog | any = {};
 

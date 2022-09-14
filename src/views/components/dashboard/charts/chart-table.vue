@@ -49,8 +49,8 @@ limitations under the License. -->
     @Prop() private item: any;
     @Prop() private theme!: string;
 
-    private nameWidth: number = 0;
-    private initWidth: number = 0;
+    private nameWidth = 0;
+    private initWidth = 0;
 
     private get dataKeys() {
       const keys = Object.keys(this.data || {}).filter((i: any) => Array.isArray(this.data[i]) && this.data[i].length);

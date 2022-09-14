@@ -155,13 +155,13 @@ limitations under the License. -->
     @Mutation('SET_EVENTS') private SET_EVENTS: any;
     @Action('GET_EVENT') private GET_EVENT: any;
 
-    private dialogEventVisible: boolean = false;
-    private enableEvents: boolean = false;
+    private dialogEventVisible = false;
+    private enableEvents = false;
     private selectedEvents: Event[] = [];
-    private checkAllServiceEvents: boolean = false;
-    private checkAllInstanceEvents: boolean = false;
-    private checkAllEndpointEvents: boolean = false;
-    private showEventDetail: boolean = false;
+    private checkAllServiceEvents = false;
+    private checkAllInstanceEvents = false;
+    private checkAllEndpointEvents = false;
+    private showEventDetail = false;
     private currentEvent: Event | {} = {};
     private pageEventsType = PageEventsType;
     private seriesTypes = SeriesTypes;

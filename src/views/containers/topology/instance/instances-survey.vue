@@ -60,7 +60,7 @@ limitations under the License. -->
     private instanceComps: any = [];
     private type: string = TopologyType.TOPOLOGY_INSTANCE;
     private templateTypes: string[] = [];
-    private updateObjects: boolean = false;
+    private updateObjects = false;
 
     private beforeMount() {
       this.setInstanceTemplates();

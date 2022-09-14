@@ -18,7 +18,7 @@
 export default function dateFormatStep(date: Date, step: string, monthDayDiff?: boolean): string {
   const year = date.getFullYear();
   const monthTemp = date.getMonth() + 1;
-  let month: string = `${monthTemp}`;
+  let month = `${monthTemp}`;
   if (monthTemp < 10) {
     month = `0${monthTemp}`;
   }
@@ -26,7 +26,7 @@ export default function dateFormatStep(date: Date, step: string, monthDayDiff?: 
     return `${year}-${month}`;
   }
   const dayTemp = date.getDate();
-  let day: string = `${dayTemp}`;
+  let day = `${dayTemp}`;
   if (dayTemp < 10) {
     day = `0${dayTemp}`;
   }
@@ -34,7 +34,7 @@ export default function dateFormatStep(date: Date, step: string, monthDayDiff?: 
     return `${year}-${month}-${day}`;
   }
   const hourTemp = date.getHours();
-  let hour: string = `${hourTemp}`;
+  let hour = `${hourTemp}`;
   if (hourTemp < 10) {
     hour = `0${hourTemp}`;
   }
@@ -42,7 +42,7 @@ export default function dateFormatStep(date: Date, step: string, monthDayDiff?: 
     return `${year}-${month}-${day} ${hour}`;
   }
   const minuteTemp = date.getMinutes();
-  let minute: string = `${minuteTemp}`;
+  let minute = `${minuteTemp}`;
   if (minuteTemp < 10) {
     minute = `0${minuteTemp}`;
   }
@@ -50,7 +50,7 @@ export default function dateFormatStep(date: Date, step: string, monthDayDiff?: 
     return `${year}-${month}-${day} ${hour}${minute}`;
   }
   const secondTemp = date.getSeconds();
-  let second: string = `${secondTemp}`;
+  let second = `${secondTemp}`;
   if (secondTemp < 10) {
     second = `0${secondTemp}`;
   }
@@ -63,7 +63,7 @@ export default function dateFormatStep(date: Date, step: string, monthDayDiff?: 
 export const dateFormatTime = (date: Date, step: string): string => {
   const year = date.getFullYear();
   const monthTemp = date.getMonth() + 1;
-  let month: string = `${monthTemp}`;
+  let month = `${monthTemp}`;
   if (monthTemp < 10) {
     month = `0${monthTemp}`;
   }
@@ -71,7 +71,7 @@ export const dateFormatTime = (date: Date, step: string): string => {
     return `${year}-${month}`;
   }
   const dayTemp = date.getDate();
-  let day: string = `${dayTemp}`;
+  let day = `${dayTemp}`;
   if (dayTemp < 10) {
     day = `0${dayTemp}`;
   }
@@ -79,7 +79,7 @@ export const dateFormatTime = (date: Date, step: string): string => {
     return `${month}-${day}`;
   }
   const hourTemp = date.getHours();
-  let hour: string = `${hourTemp}`;
+  let hour = `${hourTemp}`;
   if (hourTemp < 10) {
     hour = `0${hourTemp}`;
   }
@@ -87,7 +87,7 @@ export const dateFormatTime = (date: Date, step: string): string => {
     return `${month}-${day} ${hour}`;
   }
   const minuteTemp = date.getMinutes();
-  let minute: string = `${minuteTemp}`;
+  let minute = `${minuteTemp}`;
   if (minuteTemp < 10) {
     minute = `0${minuteTemp}`;
   }

@@ -123,7 +123,7 @@ limitations under the License. -->
     @Mutation('rocketTrace/SET_ENDPOINTS') private SET_ENDPOINTS: any;
     private service: Option = { label: 'All', key: '' };
     private time!: Date[];
-    private status: boolean = true;
+    private status = true;
     private maxTraceDuration: string = localStorage.getItem('maxTraceDuration') || '';
     private minTraceDuration: string = localStorage.getItem('minTraceDuration') || '';
     private instance: Option = { label: 'All', key: '' };
@@ -132,8 +132,8 @@ limitations under the License. -->
     private traceState: Option = { label: 'All', key: 'ALL' };
     private tagsMap: Array<{ key: string; value: string }> = [];
     private tagsList: string[] = [];
-    private clearTags: boolean = false;
-    private serviceName: string = '';
+    private clearTags = false;
+    private serviceName = '';
 
     private created() {
       this.traceId = this.$route.query.traceid ? this.$route.query.traceid.toString() : this.traceId;

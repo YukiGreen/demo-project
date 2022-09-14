@@ -60,7 +60,7 @@ limitations under the License. -->
     @Mutation('SET_EVENTS') private SET_EVENTS: any;
     @Action('rocketAlarm/GET_ALARM') private GET_ALARM: any;
     @Prop() private total!: number;
-    private pageNum: number = 1;
+    private pageNum = 1;
     private alarmOption: Option = { label: 'All', key: '' };
     private alarmOptions: Option[] = [
       { label: 'All', key: '' },
@@ -71,7 +71,7 @@ limitations under the License. -->
       { label: 'ServiceInstanceRelation', key: 'ServiceInstanceRelation' },
       { label: 'EndpointRelation', key: 'EndpointRelation' },
     ];
-    private keyword: string = '';
+    private keyword = '';
 
     private beforeMount() {
       this.SET_EVENTS([

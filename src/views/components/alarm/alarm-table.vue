@@ -106,7 +106,7 @@ limitations under the License. -->
   @Component
   export default class AlarmTable extends Vue {
     @Prop({ default: () => [] }) private data!: Alarm[];
-    private isShowDetails: boolean = false;
+    private isShowDetails = false;
     private currentDetail: Alarm = {
       tags: [],
       scope: 'All',
@@ -115,7 +115,7 @@ limitations under the License. -->
       startTime: '',
       events: [],
     };
-    private showEventDetails: boolean = false;
+    private showEventDetails = false;
     private alarmTags: string[] = [];
     private AlarmDetailCol = AlarmDetailCol;
     private eventsHeaders = EventsDetailHeaders;
