@@ -1,0 +1,15 @@
+{
+  "noLogin代表的含义": "false表示需要登录，true表示没有登录",
+  "noLogin": false,
+  "version": "1.0.0",
+  "productCode": "DEMO",
+  "i18nName": {
+    "zh_CN": "Demo",
+    "en_US": "Demo"
+  },
+  "isProd代表的含义": "false表示开发环境，true表示生产环境",
+  "isProd": false,
+  "timeout代表的含义": "前端请求后端超时时间",
+  "timeout": 15000,
+  "DEFAULTHEADERS": {}
+}

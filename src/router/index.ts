@@ -58,6 +58,11 @@ export const routes: Array<RouteConfig> = [
         component: () => import('../views/containers/debug.vue'),
         meta: { icon: 'library_books', title: 'debug', exact: false },
       },
+      {
+        path: 'table',
+        component: () => import('../views/baseComponents/table.vue'),
+        meta: { icon: 'library_books', title: 'table', exact: false },
+      },
     ],
   },
 ];
